@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Building a Form</title>
+</head>
+
+<body>
+    <form method="post">
+        <fieldset>
+            <legend>Add User</legend>
+
+            <!-- User's information section -->
+            <div>
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" name="first_Name">
+            </div>
+
+            <div>
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" name="last_Name">
+            </div>
+
+            <div>
+                <label for="email">Email:</label>
+                <input list="email" name="email" id="email">
+            </div>
+
+            <div>
+                <label for="type">Status</label>
+                <select id="type" name="status">
+                    <option value="student">Student</option>
+                    <option value="instructor">Instructor</option>
+                    <option value="Guest">Guest</option>
+                </select>
+            </div>
+
+            <!-- Choose your language section -->
+            <div>
+                <p>Choose your favorite programming language:</p>
+
+                <label for="html">HTML</label>
+                <input type="radio" id="html" name="fav_language" value="HTML"><br>
+
+                <label for="css">CSS</label>
+                <input type="radio" name="fav_language" id="css" value="CSS"><br>
+
+                <label for="javascript">JavaScript</label>
+                <input type="radio" name="fav_language" id="javascript" value="JAVASCRIPT">
+            </div>
+
+            <!-- Current date and Additional Information Section -->
+            <div>
+                <label for="comment">Comments</label>
+                <textarea type="textarea" id="comment" name="comment"></textarea>s
+            </div>
+            <div>
+                <label for="currentDate">Current Date</label>
+                <input type="date" id="currentDate" name="current_Date">
+            </div>
+
+            <!-- Terms and Agreement / Newsletter Section -->
+
+            <div>
+                <label for="newsletter">Sign up for newsletter</label>
+                <input type="checkbox" name="newsletter" id="newsletter">
+                <label for="terms">Agree to terms and conditions</label>
+                <input type="checkbox" name="terms_and_agreement" id="terms">
+            </div>
+
+            <!-- Submit Button -->
+
+            <div>
+                <button type="submit" id="language-submit-button">Submit</button>
+            </div>
+
+
+        </fieldset>
+    </form>
+</body>
+
+</html>
